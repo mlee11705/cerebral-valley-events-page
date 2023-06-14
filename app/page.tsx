@@ -1,5 +1,4 @@
 import Link from "next/link"
-import EventType from "types/event"
 
 import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"

@@ -1,5 +1,3 @@
-import EventType from "types/event"
-
 export default function UpcomingEvent({ event }: { event: EventType }) {
   return (
     <li className="mb-10 ml-4">

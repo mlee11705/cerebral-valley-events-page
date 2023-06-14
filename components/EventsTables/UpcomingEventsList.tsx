@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import EventType from "types/event"
 
 // import useStore from "src/store"
 // import { AirtableTableEventColumns } from "src/utils/constants"
