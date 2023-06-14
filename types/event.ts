@@ -7,5 +7,3 @@ type EventType = {
   link: string
   tags?: string[]
 }
-
-// TODO: Would have liked to use a type instead of interface but it's causing errors
