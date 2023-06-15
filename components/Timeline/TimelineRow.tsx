@@ -4,7 +4,7 @@ import UpcomingEventCard from "./UpcomingEventCard"
 export default function TimelineRow({ event }: { event: EventType }) {
   return (
     <div className="flex flex-col md:flex-row">
-      <DateComponent event={event} />
+      <DateComponent startDate={event.startDate} endDate={event.endDate} />
       <UpcomingEventCard event={event} />
     </div>
   )

@@ -50,4 +50,5 @@ export default function RootLayout({ children }: RootLayoutProps) {
   )
 }
 
-// TODO: bg-gradient-to-t from-stone-300 via-slate-200 to-stone-100
+// TODO: add this gradient for light mode
+// bg-gradient-to-t from-stone-300 via-slate-200 to-stone-100

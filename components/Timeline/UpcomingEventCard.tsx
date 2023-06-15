@@ -4,20 +4,20 @@ export default function UpcomingEventCard({ event }: { event: EventType }) {
   return (
     <div className="w-400 grow border-l border-gray-300 dark:border-gray-700">
       <div className="relative -left-2">
+        {/* TODO: Only add this glowing dot every time there's a new date. e.g. on StartDate switch		 */}
         <div className="-left absolute mt-1 h-3 w-3 animate-ping rounded-full border border-white bg-indigo-600 dark:border-gray-900 dark:bg-emerald-500"></div>
         <div className="-left absolute mt-1 h-3 w-3 rounded-full border border-white bg-indigo-600 dark:border-gray-900 dark:bg-emerald-500"></div>
       </div>
       <div className="mb-10 ml-4 flex grow flex-col rounded-lg bg-slate-100 p-5 dark:bg-slate-900">
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-          {event.event}
-        </h3>
-        <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
-          {event.location}
-        </p>
-        <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
-          By Cerebral Valley
-        </p>
-        <a
+        <a href={event.link}>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+            {event.event}
+          </h3>
+          <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
+            {event.location}
+          </p>
+
+          {/* <a
           href={event.link}
           className="mt-4 inline-flex items-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
         >
@@ -34,6 +34,7 @@ export default function UpcomingEventCard({ event }: { event: EventType }) {
               clip-rule="evenodd"
             ></path>
           </svg>
+        </a> */}
         </a>
       </div>
     </div>
