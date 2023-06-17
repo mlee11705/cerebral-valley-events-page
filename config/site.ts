@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Cerebral Valley Events",
+  name: "Cerebral Valley",
   description: "Cerebral Valley Events Page",
   mainNav: [
     {

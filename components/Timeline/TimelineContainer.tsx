@@ -38,6 +38,7 @@ const TimelineContainer = () => {
   const fetchData = async () => {
     const response = await AirtableService.fetchUpcomingEvents()
     setEvents(eventObjMapper(response))
+    console.log(response)
     // setFilteredData(data) // Set initial filtered data same as the initial data
   }
 

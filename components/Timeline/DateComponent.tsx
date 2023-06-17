@@ -17,7 +17,7 @@ export default function DateComponent({
 
   return (
     <div className="w-40 flex-none">
-      <time className="sticky mb-1 font-mono text-base font-bold leading-none text-gray-400 dark:text-gray-500">
+      <time className="sticky mb-1 font-mono text-base font-medium leading-none text-gray-400 dark:text-gray-500">
         {processDate(startDate, endDate)}
       </time>
     </div>
