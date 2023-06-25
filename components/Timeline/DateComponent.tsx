@@ -16,8 +16,13 @@ export default function DateComponent({
   // TODO: Only add dates on startDate change
 
   return (
-    <div className="w-40 flex-none">
-      <time className="sticky mb-1 font-mono text-base font-medium leading-none text-gray-400 dark:text-gray-500">
+    <div className="w-40 flex-none mb-4">
+      <div className="relative left-[-0.45rem]">
+        {/* TODO: Only add this glowing dot every time there's a new date. e.g. on StartDate switch		 */}
+        <div className="-left absolute mt-1 h-3 w-3 animate-ping rounded-full border border-white bg-[#1982FC] dark:border-gray-900 dark:bg-emerald-500"></div>
+        <div className="-left absolute mt-1 h-3 w-3 rounded-full border border-white bg-[#1982FC] dark:border-gray-900 dark:bg-emerald-500"></div>
+      </div>
+      <time className="sticky mb-1 ml-8 font-mono text-base font-medium leading-none text-black dark:text-gray-500">
         {processDate(startDate, endDate)}
       </time>
     </div>

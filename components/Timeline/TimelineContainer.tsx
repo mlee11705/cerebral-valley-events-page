@@ -38,7 +38,6 @@ const TimelineContainer = () => {
   const fetchData = async () => {
     const response = await AirtableService.fetchUpcomingEvents()
     setEvents(eventObjMapper(response))
-    console.log(response)
     // setFilteredData(data) // Set initial filtered data same as the initial data
   }
 
@@ -53,7 +52,7 @@ const TimelineContainer = () => {
   //   }
 
   return (
-    <div className="relative mx-auto mt-12  w-3/4 justify-center xl:w-1/2">
+    <div className="relative mx-8 xl:mx-auto lg:mx-auto md:mx-auto lg:w-3/4 md:w-3/4 mt-12 justify-center xl:w-1/2">
       {events.map((event) => (
         <TimelineRow key={event.id} event={event} />
       ))}
